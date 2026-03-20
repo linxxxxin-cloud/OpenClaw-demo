@@ -1,0 +1,623 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <title>OpenClaw x Boss Hi</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <main class="app">
+      <div class="phone-shell">
+        <section class="screen landing-screen" aria-label="OpenClaw Landing Page">
+          <header class="status-bar" aria-hidden="true">
+            <span class="status-time">9:41</span>
+            <div class="status-right">
+              <span class="signal-bars">
+                <i></i>
+                <i></i>
+                <i></i>
+                <i></i>
+              </span>
+              <span class="wifi-icon"></span>
+              <span class="battery-icon"><b></b></span>
+            </div>
+          </header>
+
+          <header class="nav-bar">
+            <button class="back-button" type="button" aria-label="返回"></button>
+            <h1>查看详情</h1>
+            <span class="nav-spacer" aria-hidden="true"></span>
+          </header>
+
+          <div class="hero-media">
+            <video
+              class="hero-video"
+              autoplay
+              muted
+              playsinline
+              preload="auto"
+              poster="./background_image.png"
+            >
+              <source src="./landingpage video.mp4" type="video/mp4" />
+            </video>
+            <div class="hero-glow" aria-hidden="true"></div>
+          </div>
+
+          <img class="content-surface" src="./background_white.png" alt="" style="top: 258px; opacity: 0.9;" />
+
+          <section class="content-panel">
+            <div class="brand-lockup">
+              <h2><span>OpenClaw</span> × Boss Hi</h2>
+            </div>
+
+            <div class="feature-list">
+              <article class="feature-card" style="padding: 12px 16px; text-align: left; background-image: linear-gradient(239.184deg, rgb(230, 250, 247) 0%, rgba(230, 250, 247, 0) 57.409%), linear-gradient(90deg, rgb(247, 248, 249) 0%, rgb(247, 248, 249) 100%);">
+                <div class="feature-head" style="display: flex; align-items: flex-start; gap: 8px; text-align: left;">
+                  <div class="feature-icon" style="width: 20px; height: 24px; flex: 0 0 auto; background: transparent; border: 0; border-radius: 0; box-shadow: none;">
+                    <img src="./icon/BH.svg" alt="" style="width: 20px; height: 24px; display: block;" />
+                  </div>
+                  <div style="display: flex; flex: 1 1 auto; flex-direction: column; align-items: flex-start; gap: 6px; min-width: 0; text-align: left;">
+                    <h3 style="margin: 0; text-align: left; font-weight: 500; color: #0A1B33;">零配置接入 Boss Hi</h3>
+                    <div class="feature-copy" style="text-align: left;">
+                      <p style="margin: 0; text-align: left; color: #4C596A;">一键即可本地部署OpenClaw，在 Boss Hi 与你的龙虾对话，帮你干活～</p>
+                    </div>
+                  </div>
+                </div>
+              </article>
+
+              <article class="feature-card" style="padding: 12px 16px; text-align: left; background-image: linear-gradient(239.184deg, rgb(234, 241, 255) 0%, rgba(234, 241, 255, 0) 57.409%), linear-gradient(90deg, rgb(247, 248, 249) 0%, rgb(247, 248, 249) 100%);">
+                <div class="feature-head" style="display: flex; align-items: flex-start; gap: 8px; text-align: left;">
+                  <div class="feature-icon" style="width: 20px; height: 24px; flex: 0 0 auto; background: transparent; border: 0; border-radius: 0; box-shadow: none;">
+                    <img src="./icon/zhishu.svg" alt="" style="width: 20px; height: 24px; display: block;" />
+                  </div>
+                  <div style="display: flex; flex: 1 1 auto; flex-direction: column; align-items: flex-start; gap: 6px; min-width: 0; text-align: left;">
+                    <h3 style="margin: 0; text-align: left; font-weight: 500; color: #0A1B33;">直书文档智能交互</h3>
+                    <div class="feature-copy" style="text-align: left;">
+                      <p style="margin: 0; text-align: left; color: #4C596A;">让你的龙虾助手帮你新建、撰写、读取文档，高效完成文档工作</p>
+                    </div>
+                  </div>
+                </div>
+              </article>
+
+              <article class="feature-card" style="padding: 12px 16px; text-align: left; background-image: linear-gradient(239.184deg, rgb(255, 247, 231) 0%, rgba(255, 247, 231, 0) 57.409%), linear-gradient(90deg, rgb(247, 248, 249) 0%, rgb(247, 248, 249) 100%);">
+                <div class="feature-head" style="display: flex; align-items: flex-start; gap: 8px; text-align: left;">
+                  <div class="feature-icon" style="width: 20px; height: 24px; flex: 0 0 auto; background: transparent; border: 0; border-radius: 0; box-shadow: none;">
+                    <img src="./icon/schedule.svg" alt="" style="width: 20px; height: 24px; display: block;" />
+                  </div>
+                  <div style="display: flex; flex: 1 1 auto; flex-direction: column; align-items: flex-start; gap: 6px; min-width: 0; text-align: left;">
+                    <h3 style="margin: 0; text-align: left; font-weight: 500; color: #0A1B33;">会议室便捷预定</h3>
+                    <div class="feature-copy" style="text-align: left;">
+                      <p style="margin: 0; text-align: left; color: #4C596A;">在聊天框即可创建日程、自动查询会议室忙闲状态，办公安排更省心</p>
+                    </div>
+                  </div>
+                </div>
+              </article>
+            </div>
+          </section>
+
+          <div class="landing-action-zone">
+            <p
+              class="inventory-pill"
+              style="
+                position: relative;
+                overflow: hidden;
+                border: 1.5px solid #ffa18b;
+                background:
+                  linear-gradient(180deg, rgba(255, 244, 241, 0.88) 0%, rgba(255, 231, 228, 0.96) 100%);
+                box-shadow:
+                  inset 0 1px 0 rgba(255, 255, 255, 0.72),
+                  0 1px 4px rgba(255, 129, 96, 0.05);
+                backdrop-filter: blur(3.35px);
+              "
+            >
+              <span class="inventory-line" style="position: relative; z-index: 1; width: 16px; height: 2px; background: linear-gradient(90deg, rgba(255, 127, 53, 0), rgba(255, 99, 84, 0.9));"></span>
+              <span id="inventoryText" style="position: relative; z-index: 1; font-weight: 500; letter-spacing: 0; background: linear-gradient(90deg, #ff7f35, #ff6354); -webkit-background-clip: text; background-clip: text; color: transparent;">虾塘还剩 2716 只龙虾待领取</span>
+              <span class="inventory-line" style="position: relative; z-index: 1; width: 16px; height: 2px; background: linear-gradient(90deg, rgba(255, 99, 84, 0.9), rgba(255, 127, 53, 0));"></span>
+            </p>
+
+            <div class="landing-bottom-bar">
+              <button class="primary-button claim-trigger" id="claimButton" type="button" style="box-shadow: none;">
+                <img class="button-icon-image" src="./icon/hd-icon-gift.svg" alt="" />
+                <span id="claimButtonLabel">领取我的龙虾</span>
+              </button>
+            </div>
+          </div>
+
+          <div class="home-indicator" aria-hidden="true"></div>
+        </section>
+
+        <div class="overlay-root">
+          <div class="overlay-backdrop is-hidden" data-overlay-backdrop></div>
+
+          <section class="bottom-sheet is-hidden" data-overlay="settings" aria-labelledby="settings-title" aria-hidden="true">
+            <div class="sheet-header" style="position: relative; height: 68px; padding: 20px;">
+              <h2 id="settings-title" style="margin: 0; width: 303px; line-height: 28px; display: flex; align-items: center;">定义你的专属龙虾形象</h2>
+              <button class="close-button" type="button" data-close="settings" aria-label="关闭" style="position: absolute; top: 20px; right: 20px;"></button>
+            </div>
+
+            <form class="settings-form" id="settingsForm" novalidate>
+              <div class="settings-content">
+                <label class="field-card settings-name-card" for="botName" style="padding: 16px;">
+                  <span class="field-title">起个名字</span>
+                  <input id="botName" name="botName" type="text" maxlength="24" placeholder="如：x老板的龙虾助理" autocomplete="off" />
+                </label>
+
+                <div class="field-card avatar-card settings-avatar-card" style="padding: 16px;">
+                  <span class="field-title" style="display: block; margin-bottom: 12px; width: 64px; height: 24px; line-height: 24px;">选择头像</span>
+                  <div class="avatar-grid" id="avatarGrid" style="display: flex; align-items: center; justify-content: space-between;">
+                    <button class="avatar-option" type="button" data-avatar="profile1" aria-label="头像 1" style="box-shadow: none; transform: none;">
+                      <img src="./profile/profile1.png" alt="" />
+                    </button>
+                    <button class="avatar-option" type="button" data-avatar="profile2" aria-label="头像 2" style="box-shadow: none; transform: none;">
+                      <img src="./profile/profile2.png" alt="" />
+                    </button>
+                    <button class="avatar-option" type="button" data-avatar="profile3" aria-label="头像 3" style="box-shadow: none; transform: none;">
+                      <img src="./profile/profile3.png" alt="" />
+                    </button>
+                    <button class="avatar-option" type="button" data-avatar="profile4" aria-label="头像 4" style="box-shadow: none; transform: none;">
+                      <img src="./profile/profile4.png" alt="" />
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="settings-action-bar" style="padding: 8px 0 0; display: flex; flex-direction: column; align-items: stretch;">
+                <div style="padding: 0 16px;">
+                  <button class="primary-button start-trigger" id="startButton" type="submit" disabled style="box-shadow: none;">
+                    <img class="button-icon-image" src="./icon/hd-icon-start.svg" alt="" />
+                    <span>开始配置</span>
+                  </button>
+                </div>
+                <div aria-hidden="true" style="height: 34px; display: flex; align-items: flex-end; justify-content: center; padding-bottom: 10px;">
+                  <span style="display: block; width: 100px; height: 4px; border-radius: 50px; background: #000000;"></span>
+                </div>
+              </div>
+            </form>
+          </section>
+
+          <section
+            class="bottom-sheet is-hidden"
+            data-overlay="process"
+            aria-labelledby="process-title"
+            aria-hidden="true"
+            style="height: 500px; background: #f7f8f9;"
+          >
+            <div class="sheet-header" style="position: relative; height: 68px; padding: 20px;">
+              <h2 id="process-title" style="margin: 0; width: 303px; line-height: 28px; display: flex; align-items: center;">自动为你配置龙虾</h2>
+              <button class="close-button" type="button" data-close="process" aria-label="关闭" style="position: absolute; top: 20px; right: 20px;"></button>
+            </div>
+
+            <div class="process-body" style="padding: 0; min-height: 432px; display: flex; flex-direction: column;">
+              <div style="flex: 0 0 338px; width: 100%; padding: 0 16px; display: flex; flex-direction: column; align-items: center; gap: 8px;">
+                <div
+                  style="
+                    width: 343px;
+                    height: 200px;
+                    padding: 16px;
+                    border-radius: 14px;
+                    background: #ffffff;
+                    display: flex;
+                    flex-direction: column;
+                    box-sizing: border-box;
+                  "
+                >
+                  <div id="processRing" style="display: none;"></div>
+                  <div style="position: absolute; width: 0; height: 0; overflow: hidden;">
+                    <strong id="progressPercent">0%</strong>
+                    <span id="progressStage">准备中</span>
+                  </div>
+
+                  <ol
+                    class="step-list"
+                    id="stepList"
+                    style="list-style: none; margin: 0; padding: 0; width: 311px; height: 168px; display: flex; flex-direction: column; gap: 8px;"
+                  >
+                    <li
+                      class="step-item"
+                      data-step-index="0"
+                      style="
+                        width: 311px;
+                        min-height: 24px;
+                        padding: 0;
+                        margin: 0;
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+                        background: transparent;
+                        box-shadow: none;
+                        border-radius: 0;
+                        transform: none;
+                      "
+                    >
+                      <div class="step-main" style="display: flex; align-items: center; gap: 12px;">
+                        <span aria-hidden="true" style="display: block; width: 20px; height: 20px;">
+                          <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="10" cy="10" r="8.5" stroke="#D9DDE5" stroke-width="3"/>
+                            <circle
+                              data-step-progress="0"
+                              cx="10"
+                              cy="10"
+                              r="8.5"
+                              stroke="#1C64F2"
+                              stroke-width="3"
+                              stroke-linecap="round"
+                              fill="none"
+                              style="stroke-dasharray: 53.41; stroke-dashoffset: 53.41; transform: rotate(-90deg); transform-origin: 10px 10px;"
+                            />
+                            <circle cx="10" cy="10" r="5.5" fill="white"/>
+                          </svg>
+                        </span>
+                        <span class="step-label" style="font-size: 16px; line-height: 24px; color: #0A1B33;">启动云端服务</span>
+                      </div>
+                      <span class="step-time" style="font-size: 16px; line-height: 24px; color: #A7ADB5;"></span>
+                    </li>
+
+                    <li aria-hidden="true" style="width: 20px; height: 32px; margin: 0 0 0 0;">
+                      <svg width="20" height="32" viewBox="0 0 20 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <line x1="10" y1="0" x2="10" y2="32" stroke="#E2E6ED" stroke-width="2"/>
+                      </svg>
+                    </li>
+
+                    <li
+                      class="step-item"
+                      data-step-index="1"
+                      style="
+                        width: 311px;
+                        min-height: 24px;
+                        padding: 0;
+                        margin: 0;
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+                        background: transparent;
+                        box-shadow: none;
+                        border-radius: 0;
+                        transform: none;
+                      "
+                    >
+                      <div class="step-main" style="display: flex; align-items: center; gap: 12px;">
+                        <span aria-hidden="true" style="display: block; width: 20px; height: 20px;">
+                          <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="10" cy="10" r="8.5" stroke="#D9DDE5" stroke-width="3"/>
+                            <circle
+                              data-step-progress="1"
+                              cx="10"
+                              cy="10"
+                              r="8.5"
+                              stroke="#1C64F2"
+                              stroke-width="3"
+                              stroke-linecap="round"
+                              fill="none"
+                              style="stroke-dasharray: 53.41; stroke-dashoffset: 53.41; transform: rotate(-90deg); transform-origin: 10px 10px;"
+                            />
+                            <circle cx="10" cy="10" r="5.5" fill="white"/>
+                          </svg>
+                        </span>
+                        <span class="step-label" style="font-size: 16px; line-height: 24px; color: #0A1B33;">部署OpenClaw</span>
+                      </div>
+                      <span class="step-time" style="font-size: 16px; line-height: 24px; color: #A7ADB5;"></span>
+                    </li>
+
+                    <li aria-hidden="true" style="width: 20px; height: 32px; margin: 0 0 0 0;">
+                      <svg width="20" height="32" viewBox="0 0 20 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <line x1="10" y1="0" x2="10" y2="32" stroke="#E2E6ED" stroke-width="2"/>
+                      </svg>
+                    </li>
+
+                    <li
+                      class="step-item"
+                      data-step-index="2"
+                      style="
+                        width: 311px;
+                        min-height: 24px;
+                        padding: 0;
+                        margin: 0;
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+                        background: transparent;
+                        box-shadow: none;
+                        border-radius: 0;
+                        transform: none;
+                      "
+                    >
+                      <div class="step-main" style="display: flex; align-items: center; gap: 12px;">
+                        <span aria-hidden="true" style="display: block; width: 20px; height: 20px;">
+                          <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="10" cy="10" r="8.5" stroke="#D9DDE5" stroke-width="3"/>
+                            <circle
+                              data-step-progress="2"
+                              cx="10"
+                              cy="10"
+                              r="8.5"
+                              stroke="#1C64F2"
+                              stroke-width="3"
+                              stroke-linecap="round"
+                              fill="none"
+                              style="stroke-dasharray: 53.41; stroke-dashoffset: 53.41; transform: rotate(-90deg); transform-origin: 10px 10px;"
+                            />
+                            <circle cx="10" cy="10" r="5.5" fill="white"/>
+                          </svg>
+                        </span>
+                        <span class="step-label" style="font-size: 16px; line-height: 24px; color: #0A1B33;">连接BossHi</span>
+                      </div>
+                      <span class="step-time" style="font-size: 16px; line-height: 24px; color: #A7ADB5;"></span>
+                    </li>
+                  </ol>
+                </div>
+
+                <p id="statusCopy" class="process-copy" style="margin: 0; width: 343px; font-size: 14px; line-height: 22px; color: #A7ADB5; text-align: center;"></p>
+              </div>
+
+              <div style="flex: 0 0 94px; width: 100%; margin-top: auto;">
+                <div style="padding: 8px 16px 0;">
+                  <button
+                    class="primary-button process-button"
+                    type="button"
+                    disabled
+                    style="margin: 0; box-shadow: none; background: #B3CCFF;"
+                  >
+                    <img class="button-icon-image" src="./icon/hd-icon-start.svg" alt="" />
+                    <span>配置中</span>
+                  </button>
+                </div>
+                <div aria-hidden="true" style="height: 34px; display: flex; align-items: flex-end; justify-content: center; padding-bottom: 10px;">
+                  <span style="display: block; width: 100px; height: 4px; border-radius: 50px; background: #000000;"></span>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section
+            class="bottom-sheet is-hidden"
+            data-overlay="fail"
+            aria-labelledby="fail-title"
+            aria-hidden="true"
+            style="height: 500px; background: #f7f8f9;"
+          >
+            <div class="sheet-header" style="position: relative; height: 68px; padding: 20px;">
+              <h2 id="fail-title" style="margin: 0; width: 303px; line-height: 28px; display: flex; align-items: center;">自动为你配置龙虾</h2>
+              <button class="close-button" type="button" data-close="fail" aria-label="关闭" style="position: absolute; top: 20px; right: 20px;"></button>
+            </div>
+
+            <div class="fail-body" style="padding: 0; min-height: 432px; display: flex; flex-direction: column;">
+              <div
+                style="
+                  flex: 0 0 338px;
+                  width: 100%;
+                  display: flex;
+                  align-items: flex-start;
+                  justify-content: center;
+                "
+              >
+                <div
+                  style="
+                    width: 192px;
+                    height: 338px;
+                    display: flex;
+                    align-items: flex-start;
+                    justify-content: center;
+                  "
+                >
+                  <div
+                    style="
+                      margin-top: 101px;
+                      width: 192px;
+                      display: flex;
+                      flex-direction: column;
+                      align-items: center;
+                    "
+                  >
+                    <img class="fail-image" src="./暂无任务.png" alt="" style="width: 100px; height: 100px; margin: 0;" />
+                    <p
+                      class="fail-copy"
+                      style="
+                        margin: 8px 0 0;
+                        width: 168px;
+                        font-size: 14px;
+                        line-height: 24px;
+                        color: #878F9B;
+                        text-align: center;
+                      "
+                    >
+                      配置失败，请重新领取龙虾
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div style="flex: 0 0 94px; width: 100%; margin-top: auto;">
+                <div style="padding: 8px 16px 0;">
+                  <button class="primary-button retry-trigger" type="button" id="retryButton" style="margin: 0; box-shadow: none;">
+                    <img class="button-icon-image" src="./icon/hd-icon-gift.svg" alt="" />
+                    <span>重新领取</span>
+                  </button>
+                </div>
+                <div aria-hidden="true" style="height: 34px; display: flex; align-items: flex-end; justify-content: center; padding-bottom: 10px;">
+                  <span style="display: block; width: 100px; height: 4px; border-radius: 50px; background: #000000;"></span>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section class="success-overlay is-hidden" data-overlay="success" aria-labelledby="success-title" aria-hidden="true">
+            <article
+              class="success-card"
+              id="successCard"
+              style="
+                position: relative;
+                width: 335px;
+                min-height: 332px;
+                height: auto;
+                padding: 32px 16px 16px;
+                border-radius: 20px;
+                background: #ffffff;
+                overflow: hidden;
+                box-shadow: none;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: 24px;
+                box-sizing: border-box;
+              "
+            >
+              <div
+                aria-hidden="true"
+                style="
+                  position: absolute;
+                  left: -58px;
+                  top: -168px;
+                  width: 278px;
+                  height: 272px;
+                  border-radius: 999px;
+                  background: radial-gradient(circle at 58% 58%, rgba(255, 102, 102, 0.38) 0%, rgba(255, 102, 102, 0.28) 30%, rgba(255, 125, 118, 0.14) 56%, rgba(255, 125, 118, 0) 82%);
+                  filter: blur(34px);
+                  pointer-events: none;
+                "
+              ></div>
+              <div
+                aria-hidden="true"
+                style="
+                  position: absolute;
+                  left: 82px;
+                  top: -170px;
+                  width: 294px;
+                  height: 282px;
+                  border-radius: 999px;
+                  background: radial-gradient(circle at 38% 58%, rgba(255, 164, 82, 0.37) 0%, rgba(255, 164, 82, 0.26) 32%, rgba(255, 188, 108, 0.13) 58%, rgba(255, 188, 108, 0) 84%);
+                  filter: blur(36px);
+                  pointer-events: none;
+                "
+              ></div>
+
+              <button class="close-button success-close" type="button" data-close="success" aria-label="关闭" style="position: absolute; top: 20px; right: 20px;"></button>
+
+              <div
+                style="
+                  position: relative;
+                  z-index: 1;
+                  width: 100%;
+                  display: flex;
+                  flex-direction: column;
+                  align-items: center;
+                  gap: 14px;
+                "
+              >
+                <div
+                  style="
+                    width: 335px;
+                    padding: 0 16px;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    gap: 12px;
+                    box-sizing: border-box;
+                  "
+                >
+                  <div class="success-avatar-wrap">
+                    <img
+                      class="success-avatar"
+                      id="successAvatar"
+                      src="./profile/profile3.png"
+                      alt="成功头像"
+                      style="
+                        position: relative;
+                        width: 100px;
+                        height: 100px;
+                        margin: 0;
+                        z-index: 3;
+                        flex: 0 0 auto;
+                      "
+                    />
+                  </div>
+                  <div style="width: 303px; text-align: center;">
+                    <h2
+                      id="success-title"
+                      style="
+                        margin: 0;
+                        width: 303px;
+                        font-size: 24px;
+                        line-height: 38px;
+                        font-weight: 500;
+                        color: #0A1B33;
+                        text-align: center;
+                        white-space: normal;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                        display: -webkit-box;
+                        -webkit-line-clamp: 2;
+                        -webkit-box-orient: vertical;
+                        max-height: 76px;
+                      "
+                    >
+                      虾老板的小助手
+                    </h2>
+                    <p
+                      class="success-subtitle"
+                      style="
+                        margin: 0;
+                        width: 303px;
+                        font-size: 14px;
+                        line-height: 22px;
+                        color: #A7ADB5;
+                        text-align: center;
+                      "
+                    >
+                      你的OpenClaw已准备就绪
+                    </p>
+                  </div>
+                </div>
+
+                <p
+                  class="serial-pill"
+                  id="serialPill"
+                  style="
+                    margin: 0;
+                    min-height: 30px;
+                    max-width: 303px;
+                    padding: 4px 12px;
+                    border-radius: 58px;
+                    background: linear-gradient(7.3996deg, #FF6354 0%, #FF8D5E 100%);
+                    display: inline-flex;
+                    align-items: center;
+                    justify-content: center;
+                    gap: 6px;
+                    box-sizing: border-box;
+                  "
+                >
+                  <img
+                    class="serial-pill-icon"
+                    src="https://www.figma.com/api/mcp/asset/e0a7ef0a-1439-4c69-929c-45cc44a3fe77"
+                    alt=""
+                    style="width: 20px; height: 20px; flex: 0 0 auto;"
+                  />
+                  <span style="font-size: 14px; line-height: 22px; color: #FFFFFF; white-space: nowrap;">您已领取虾塘的第2031只龙虾</span>
+                </p>
+              </div>
+
+              <button
+                class="primary-button chat-trigger"
+                type="button"
+                id="chatButton"
+                style="
+                  position: relative;
+                  z-index: 1;
+                  width: 303px;
+                  margin: auto 0 0;
+                  box-shadow: none;
+                  background: #1C64F2;
+                "
+              >
+                <img class="button-icon-image" src="./icon/hd-icon-chat.svg" alt="" />
+                <span>开始对话</span>
+              </button>
+            </article>
+          </section>
+        </div>
+      </div>
+    </main>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
